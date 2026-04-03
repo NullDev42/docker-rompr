@@ -1,0 +1,14 @@
+services: 
+  rompr-office: 
+    image: nulldev42/docker-rompr:latest
+    container_name: rompr-office
+    restart: unless-stopped
+    volumes:
+      - rompr-albumart:/rompr/albumart
+      - rompr-prefs:/rompr/prefs
+    ports: 
+      - 8085:80
+
+volumes:
+  rompr-albumart:
+  rompr-prefs:
