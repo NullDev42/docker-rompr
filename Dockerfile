@@ -1,5 +1,5 @@
 FROM archlinux/archlinux:base-20260317.0.501684 AS builder
-ARG ROMPR_VERSION=2.26
+ARG ROMPR_VERSION=2.29
 ARG ZIP_FILE=rompr-$ROMPR_VERSION.zip
 ARG FETCH_URL=https://github.com/fatg3erman/RompR/releases/download/$ROMPR_VERSION/$ZIP_FILE
 
